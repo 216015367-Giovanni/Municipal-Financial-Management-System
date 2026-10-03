@@ -1,0 +1,214 @@
+void reportsMenu()
+{
+int choice;
+
+do
+{
+printf("\n========== REPORTS ==========\n");
+printf("1. Employee Report\n");
+printf("2. Budget Report\n");
+printf("3. Supplier Report\n");
+printf("4. Asset Report\n");
+printf("5. Back to Main Menu\n");
+printf("Enter your choice: ");
+scanf("%d", &choice);
+
+switch (choice)
+{
+case 1:
+employeeReport();
+break;
+
+case 2:
+budgetReport();
+break;
+
+case 3:
+supplierReport();
+break;
+
+case 4:
+assetReport();
+break;
+
+case 5:
+printf("Returning to main menu...\n");
+break;
+
+default:
+printf("Invalid choice. Please try again.\n");
+}
+
+} while (choice != 5);
+}
+
+/* EMPLOYEE REPORT */
+
+void employeeReport()
+{
+double totalSalary = 0;
+double averageSalary;
+double highestSalary;
+double lowestSalary;
+
+if (employeeCount == 0)
+{
+printf("\nNo employees available.\n");
+return;
+}
+
+highestSalary = employees[0].basicSalary +
+employees[0].housingAllowance +
+employees[0].transportAllowance;
+
+lowestSalary = highestSalary;
+
+for (int i = 0; i < employeeCount; i++)
+{
+double salary = employees[i].basicSalary +
+employees[i].housingAllowance +
+employees[i].transportAllowance;
+
+totalSalary = totalSalary + salary;
+
+if (salary > highestSalary)
+{
+highestSalary = salary;
+}
+
+if (salary < lowestSalary)
+{
+lowestSalary = salary;
+}
+}
+
+averageSalary = totalSalary / employeeCount;
+
+printf("\n========== EMPLOYEE REPORT ==========\n");
+printf("Total Employees: %d\n", employeeCount);
+printf("Average Salary: Nlatex
+%.2f\n", averageSalary); printf("Highest Salary: N
+
+%.2f\n", highestSalary);
+printf("Lowest Salary: N$`%.2f\n", lowestSalary);
+}
+
+/* BUDGET REPORT */
+
+void budgetReport()
+{
+double totalAllocated = 0;
+double totalExpenditure = 0;
+double remainingBudget;
+int exceeded = 0;
+
+if (budgetCount == 0)
+{
+printf("\nNo budget information available.\n");
+return;
+}
+
+for (int i = 0; i < budgetCount; i++)
+{
+totalAllocated =
+totalAllocated + budgets[i].allocatedBudget;
+
+totalExpenditure =
+totalExpenditure + budgets[i].expenditure;
+}
+
+remainingBudget = totalAllocated - totalExpenditure;
+
+printf("\n========== BUDGET REPORT ==========\n");
+
+printf("Total Allocated Budget: N`$%.2f\n",
+totalAllocated);
+
+printf("Total Expenditure: N$`%.2f\n",
+totalExpenditure);
+
+printf("Remaining Budget: N`$%.2f\n",
+remainingBudget);
+
+printf("\nDepartments Exceeding Budget:\n");
+
+for (int i = 0; i < budgetCount; i++)
+{
+if (budgets[i].expenditure >
+budgets[i].allocatedBudget)
+{
+printf("- %s\n", budgets[i].department);
+exceeded = 1;
+}
+}
+
+if (exceeded == 0)
+{
+printf("None\n");
+}
+}
+
+/* SUPPLIER REPORT */
+
+void supplierReport()
+{
+if (supplierCount == 0)
+{
+printf("\nNo suppliers registered.\n");
+return;
+}
+
+printf("\n========== SUPPLIER REPORT ==========\n");
+
+for (int i = 0; i < supplierCount; i++)
+{
+printf("\nSupplier ID: %d\n",
+suppliers[i].id);
+
+printf("Supplier Name: %s\n",
+suppliers[i].name);
+
+printf("Email: %s\n",
+suppliers[i].email);
+
+printf("Telephone: %s\n",
+suppliers[i].telephone);
+
+printf("Town/Location: %s\n",
+suppliers[i].town);
+}
+}
+
+/* ASSET REPORT */
+
+void assetReport()
+{
+if (assetCount == 0)
+{
+printf("\nNo assets registered.\n");
+return;
+}
+
+printf("\n========== ASSET REPORT ==========\n");
+
+for (int i = 0; i < assetCount; i++)
+{
+printf("\nAsset ID: %d\n",
+assets[i].id);
+
+printf("Asset Name: %s\n",
+assets[i].name);
+
+printf("Asset Type: %s\n",
+assets[i].type);
+
+printf("Purchase Value: N$%.2f\n",
+assets[i].purchaseValue);
+
+printf("Department: %s\n",
+assets[i].department);
+
+printf("Condition: %s\n",
+assets[i].condition);
+}
+}
