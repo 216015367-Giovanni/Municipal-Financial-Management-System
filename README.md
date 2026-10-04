@@ -3,12 +3,12 @@
 Group: 3
 
 Members:
-Eila kambonde
-Giovanni
-Jonah Sales
-Troy Likando
-Elias Paulus
-Ewana Kenda
+Eila kambonde,
+Giovanni,
+Jonah Sales,
+Troy Likando,
+Elias Paulus,
+Ewana Kenda,
 Etuhole Nghishifile
 
 Project description:
