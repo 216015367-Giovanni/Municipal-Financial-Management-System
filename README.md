@@ -4,7 +4,7 @@ Group: 3
 
 Members:
 Eila kambonde,
-Giovanni,
+Giovanni Apollus,
 Jonah Sales,
 Troy Likando,
 Elias Paulus,
