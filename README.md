@@ -36,11 +36,13 @@ Compile the program first, run it, then use the menu to access the different fea
 
 individual responsibilities:
 
-eployemee- Ewana
-budget- Troy
-supplier- Jonah
-asset- Eila 
-reports-Elias
-functions- Etuhole
-testing-
+employee - Ewana
+budget - Troy
+supplier - Jonah
+asset - Eila 
+reports - Elias
+functions - Giovanni
+testing - Giovanni
+Documentation - Ethuhole
+
 
