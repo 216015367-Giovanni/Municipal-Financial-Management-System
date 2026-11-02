@@ -38,9 +38,9 @@ individual responsibilities:
 
 Employee Management - Ewana
 Budget Management  - Troy
-Supplier Management - Jonah
+Supplier Management - Ethuhole
 Asset Management  - Eila 
 Reports  - Elias
-Functions, integration and validation  - Ethuhole
+Functions, integration and validation  - Jonah
 Testing, documentation and Git coordination - Giovanni
 
