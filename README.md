@@ -36,13 +36,11 @@ Compile the program first, run it, then use the menu to access the different fea
 
 individual responsibilities:
 
-employee - Ewana
-budget - Troy
-supplier - Jonah
-asset - Eila 
-reports - Elias
-functions - Giovanni
-testing - Giovanni
-Documentation - Ethuhole
-
+Employee Management - Ewana
+Budget Management  - Troy
+Supplier Management - Jonah
+Asset Management  - Eila 
+Reports  - Elias
+Functions, integration and validation  - Ethuhole
+Testing, documentation and Git coordination - Giovanni
 
