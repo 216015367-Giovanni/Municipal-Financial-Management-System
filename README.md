@@ -29,7 +29,7 @@ system features:
 10. Employee Records Management – Keeps employee information organized and accessible within the system.
 
 compilation instructions:
-To run the Municipal Financial Management System, open the project in a C programming environment such as Code:Visual Studio Code. Make sure that all the required source files and header files are saved in the same project folder. Open the main C file and compile the program to check for any errors. If the program compiles successfully, run it and the main menu will appear, allowing the user to access the different employee and asset management features.
+To run the Municipal Financial Management System, open the project in a C programming environment such as Visual Studio Code. Make sure that all required source files and header files are saved in the same project folder. Open mfms.c and compile the program (e.g., using gcc mfms.c -o mfms) to check for any errors. If the program compiles successfully, run the executable and the main menu will appear, allowing the user to access the different employee, budget, supplier, and asset management features
 
 how to run the system:
 Compile the program first, run it, then use the menu to access the different features of the Employee Management System.
